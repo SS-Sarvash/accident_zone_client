@@ -22,7 +22,7 @@ function App() {
   }, [state]);
 
   const postData = async (details) =>{    //function to POST the card details to json
-    const res = await fetch('http://localhost:5000/poster',{
+    const res = await fetch('https://accident-zone-server.vercel.app/poster',{
       method: 'POST',
       headers: {
         'Content-type' : 'application/json'
